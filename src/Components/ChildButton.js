@@ -1,9 +1,13 @@
 import React from 'react'
 
 export default function ChildButton() {
+    const toggle = false;
   return (
-    <div>
-      
-    </div>
+    <>
+        <button>
+            Child Button
+        </button>
+        {toggle && <h1>Toggle</h1>}
+    </>
   )
 }
