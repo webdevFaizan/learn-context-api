@@ -1,10 +1,12 @@
-import React from 'react'
-import ChildButton from './ChildButton'
+import React, { useContext } from 'react'
+import ToggleContext from '../Context/ToggleText/ToggleContext';
+import ChildButton from './ChildButton';
 
 export default function ParentButton() {
+    const {alterToggle} = useContext(ToggleContext);
   return (
     <>
-        <button>
+        <button onClick={()=>{alterToggle()}}>
             Parent Button
         </button>
         <ChildButton/>

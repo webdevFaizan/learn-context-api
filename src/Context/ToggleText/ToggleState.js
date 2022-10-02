@@ -8,7 +8,7 @@ const ToggleState = (props)=>{
     }
 
     return (
-        <ToggleContext.Provider value={{toggle,alterToggle}}>
+        <ToggleContext.Provider value={{toggle, alterToggle}}>
             {props.children}
         </ToggleContext.Provider>
     )
